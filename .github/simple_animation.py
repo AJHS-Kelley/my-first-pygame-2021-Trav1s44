@@ -1,4 +1,5 @@
-# Simple Animation with PyGame, Brandon flagg, 1/6/22, 2:18Pm, v0.2
+# Simple Animation with PyGame, Brandon flagg, 1/6/22, 2:25Pm, v0.3
+
 
 import PyGame, sys, time
 from PyGame.locals import *
@@ -19,3 +20,9 @@ UPLEFT = 'upleft'
 UPRIGHT = 'upright'
 
 MOVESPEED = 4
+
+# setup color values.
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
