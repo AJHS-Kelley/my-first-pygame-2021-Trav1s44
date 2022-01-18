@@ -1,8 +1,8 @@
 # Simple Animation with PyGame, Brandon flagg, 1/10/22, 2:33Pm, v0.8
 
 
-import PyGame, sys, time
-from PyGame.locals import *
+import pygame, sys, time
+from pygame.locals import *
 
 # setup pygame
 pygame.init()
@@ -11,7 +11,7 @@ pygame.init()
 WINDOWWIDTH = 400
 WINDOWHEIGHT = 400
 windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT),0, 32)
-PyGame.display.set_caption('Animation Example!')
+pygame.display.set_caption('Animation Example!')
 
 # setup the direction variables
 DOWNLEFT = 'downleft'
