@@ -49,14 +49,14 @@ while True:
             b['rect'].left -= MOVESPEED
             b['rect'].top += MOVESPEED 
         if b['dir'] == DOWNRIGHT:
-            b['rect'].left -= MOVESPEED
+            b['rect'].left += MOVESPEED # Change to += 
             b['rect'].top += MOVESPEED 
         if b['dir'] == UPLEFT:
             b['rect'].left -= MOVESPEED
             b['rect'].top += MOVESPEED
         if b['dir'] == UPRIGHT:
-            b['rect'].left -= MOVESPEED
-            b['rect'].top += MOVESPEED
+            b['rect'].left += MOVESPEED # Change to += 
+            b['rect'].top -= MOVESPEED #  Change to -= 
 
         if b['rect'].top < 0:
             # the box has moved past the top
@@ -83,6 +83,7 @@ while True:
             if b['dir'] == UPRIGHT: # Move this line 4 spaces to the LEFT. 
                 b['dir'] = UPLEFT # Move this line 4 spaces to the LEFT. 
         # Draw the box onto the game surface.
+
         pygame.draw.rect(windowSurface, b['color'], b['rect'])
 
     # Draw the window to the screen
